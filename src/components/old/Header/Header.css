@@ -1,0 +1,35 @@
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
+}
+
+.nav {
+  margin: auto;
+
+}
+
+.nav ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.nav a {
+  color: #313A79;
+  font-family: 'VAG Rounded Std Bold', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 25px;
+}
+
+.nav .first-letter {
+  color: #E6A630;
+}

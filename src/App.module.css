@@ -1,0 +1,107 @@
+/* Réinitialisation des marges et padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  padding: 0 0; /* Ajuste le padding pour mieux centrer */
+  height: 10vh;
+  text-align: center;
+  font-family: 'VAG Rounded Std', sans-serif;
+  display: flex;
+  align-items: center; /* Centre les éléments verticalement */
+  justify-content: center; /* Centre les éléments horizontalement */
+}
+
+.navList {
+  display: flex;
+   justify-content: center;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+.navItem {
+  margin: 0 4vw;
+  cursor: pointer;
+  font-weight: 900;
+  text-decoration: none;
+  color: #313879; /* Couleur des liens non actifs */
+  font-size: 2.5vw;
+  transition: color 0.3s ease;
+}
+
+/* Responsivité pour les tablettes */
+@media (max-width: 768px) {
+  .navItem {
+    font-size: 1rem; /* Réduit la taille du texte de la navigation sur tablette */
+    margin: 0 10px;
+  }
+}
+
+/* Responsivité pour les mobiles */
+@media (max-width: 480px) {
+  .navItem {
+    font-size: 0.9rem; /* Encore plus petit sur mobile */
+    margin: 0 5px;
+  }
+
+  .navbar {
+    padding: 8px 0; /* Réduit le padding vertical pour gagner de l’espace */
+  }
+}
+
+/* Pas de padding-top ou margin-top pour éviter tout décalage */
+.pageContent {
+  width: 100%;
+}
+
+.navItem:hover {
+  color: #8C6B9A; /* Couleur des liens au survol */
+}
+
+/* Couleur du lien actif */
+.active {
+    color: #8C6B9A;
+}
+
+.active2 {
+    color: #589C75;
+}
+
+@font-face {
+  font-family: 'VAG Rounded Std';
+  src: url('./assets/fonts/VAG Rounded Std Normal.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VAG Rounded Std';
+  src: url('./assets/fonts/VAG Rounded Std Thin.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VAG Rounded Std';
+  src: url('./assets/fonts/VAG Rounded Std Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VAG Rounded Std';
+  src: url('./assets/fonts/VAG Rounded Std Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}

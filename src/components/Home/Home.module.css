@@ -1,0 +1,44 @@
+.cadre1 {
+  background-image: url('../../assets/themes/psy/psy.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svgContainer {
+  padding-top: 10vh;
+  width: 100%; /* Taille par défaut */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsivité pour les tablettes */
+@media (max-width: 768px) {
+  .svgContainer {
+    width: 70%; /* Augmente la largeur du SVG pour qu'il prenne plus de place sur tablette */
+  }
+}
+
+/* Responsivité pour les mobiles */
+@media (max-width: 480px) {
+  .cadre1 {
+    height: 50vh; /* Réduit la hauteur du cadre rouge sur mobile */
+  }
+
+  .svgContainer {
+    width: 90%; /* Augmente la largeur du SVG pour qu'il soit plus visible sur mobile */
+  }
+}
+
+
+.cadre2 {
+  background-color: #313879;
+  height: 100vh;
+  width: 100%;
+}
